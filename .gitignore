@@ -1,2 +1,9 @@
 *.class
 *.log
+target
+*.iml
+*.ipr
+*.iws
+.idea
+out
+.DS_Store
