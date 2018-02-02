@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException
+
 import scala.annotation.tailrec
 
 /**
@@ -14,6 +16,7 @@ object P01 {
   def last(list: List[Int]): Int = list match {
     case head :: Nil => head
     case _ :: tail => last(tail)
+    case Nil => throw new NoSuchElementException
   }
 
   def main(args: Array[String]): Unit = {
